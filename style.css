@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: center url("https://wallpapercave.com/wp/wp2983965.jpg");
+    
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .card {
+    position: relative;
+    width: 525px;
+    height: 380px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background:  #2e6b66;
+    
+    
+
+}
+
+.container .card img {
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+    
+}
+
+
+.container .card:hover img {
+    left: 76.5%;
+    height: 440px;  
+     
+
+}
+
+
+.container .card .content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 10px 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    left: -5%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.container .card .content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+}
+
+.container .card .content p {
+    color: #fff;
+}
+
+.container .card .content a {
+    position: relative;
+    color: #111;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+
+
+
+
+
+
+
